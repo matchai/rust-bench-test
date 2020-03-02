@@ -22,7 +22,7 @@ jobs:
         run: cargo bench | tee bench-output.txt
 
       - name: Store benchmark results
-        uses: rhysd/github-action-benchmark@master
+        uses: rhysd/github-action-benchmark@v1
         with:
           name: Rust Benchmark
           tool: 'cargo'
