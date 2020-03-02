@@ -9,9 +9,6 @@ use test::Bencher;
 fn bench_fib_10(b: &mut Bencher) {
     b.iter(|| {
         let _ = fibonacci(10);
-        let _ = fibonacci(10);
-        let _ = fibonacci(10);
-        let _ = fibonacci(10);
     });
 }
 
