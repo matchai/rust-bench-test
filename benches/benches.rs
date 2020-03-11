@@ -2,7 +2,7 @@
 
 extern crate test;
 
-use starship_test::fibonacci;
+use rust_bench_test::fibonacci;
 use test::Bencher;
 
 #[bench]
