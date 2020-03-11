@@ -21,11 +21,6 @@ jobs:
       - name: Run cargo bench
         run: cargo bench | tee bench-output.txt
 
-      - name: Run git config
-        run: |
-          git config user.name "Matan Kushner"
-          git config user.email "hello@matchai.dev"
-
       - name: Store benchmark results
         uses: rhysd/github-action-benchmark@v1
         with:
