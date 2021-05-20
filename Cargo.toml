@@ -5,7 +5,7 @@ authors = ["Matan Kushner <hello@matchai.dev>"]
 edition = "2018"
 
 [dev-dependencies]
-criterion = "0.3"
+criterion = { version = "0.3", features = ["html_reports"] }
 
 [lib]
 bench = false
