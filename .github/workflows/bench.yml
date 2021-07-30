@@ -18,6 +18,9 @@ jobs:
           profile: minimal
           toolchain: stable
           override: true
+        
+      - name: Install gnuplot
+        run: sudo apt-get install gnuplot
 
       - name: Run cargo bench
         run: cargo bench -- --output-format bencher | tee output.txt
